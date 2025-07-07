@@ -26,35 +26,21 @@ export default function ContactPage() {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-100">Contact Information</h2>
-                <p className="text-gray-400 mb-8">
-                  Choose the most convenient way to reach us. Our team is ready to assist you.
-                </p>
+                <h2 className="text-3xl font-bold mb-6 text-gray-100">Contact Us</h2>
               </div>
-              
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <Mail className="h-6 w-6 text-green-500 mt-1" />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-100">Email</h3>
-                    <p className="text-gray-400">support@zerodevopsai.com</p>
+                    <p className="text-gray-400">info@ezaix.com</p>
                   </div>
                 </div>
-                
                 <div className="flex items-start space-x-4">
                   <Phone className="h-6 w-6 text-green-500 mt-1" />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-100">Phone</h3>
                     <p className="text-gray-400">+91 78570 75111</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <MapPin className="h-6 w-6 text-green-500 mt-1" />
-                  <div>
-                    <h3 className="text-lg font-semibold text-gray-100">Office</h3>
-                    <p className="text-gray-400">123 Tech Street</p>
-                    <p className="text-gray-400">San Francisco, CA 94107</p>
                   </div>
                 </div>
               </div>

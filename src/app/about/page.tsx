@@ -1,6 +1,6 @@
 import { Navbar } from '@/components/Navbar';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Users, Target, Award, Lightbulb } from 'lucide-react';
+import { ArrowRight, Users, Brain, Zap, Award, Rocket } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -10,66 +10,62 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-gray-900 to-background">
         <div className="container mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-green-500 to-green-700 bg-clip-text text-transparent">
-            Our Mission
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+            About MonkCI
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            We&apos;re on a mission to democratize DevOps by making it accessible to everyone. Our AI-powered platform automates complex operations, reduces costs, and helps teams ship better software faster.
+            MonkCI is on a mission to build the world's fastest CI runners. We help teams ship features up to 8× faster and cache up to 20× faster—at a fraction of the cost, with zero migration pain.
           </p>
         </div>
       </section>
 
-      {/* Vision Section */}
+      {/* Vision & Why MonkCI Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-gray-100">Our Vision</h2>
+              <h2 className="text-3xl font-bold mb-6 text-gray-100">Why MonkCI?</h2>
               <p className="text-gray-400 text-lg mb-8">
-                Our team combines decades of DevOps expertise with cutting-edge AI technology. We&apos;ve worked with some of the world&apos;s most innovative companies and understand the challenges of modern software development.
+                Legacy CI/CD tools are slow, expensive, and built for yesterday's web apps. MonkCI is purpose-built for today's AI-driven, high-velocity teams—delivering up to 8× faster builds, up to 20× faster caching, and 75% lower costs, all at GitHub pricing.
               </p>
               <p className="text-gray-400">
-                By combining cutting-edge AI technology with DevOps best practices, we&apos;re making enterprise-grade infrastructure accessible to everyone.
+                We believe every developer deserves world-class speed, instant feedback, and predictable budgets—without switching off innovation.
               </p>
             </div>
-            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800">
-              <Lightbulb className="h-16 w-16 text-green-500 mb-6" />
-              <h3 className="text-2xl font-semibold mb-4 text-gray-100">Why We Exist</h3>
+            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 text-center">
+              <Rocket className="h-16 w-16 text-green-500 mb-6 mx-auto" />
+              <h3 className="text-2xl font-semibold mb-4 text-gray-100">Our Edge</h3>
               <p className="text-gray-400">
-                Traditional DevOps solutions are complex, expensive, and require specialized knowledge. We&apos;re changing that by making DevOps simple, affordable, and accessible to all.
+                Up to 8× faster builds, up to 20× faster caching, AI-powered log insights, and instant SSH access. MonkCI is the drop-in replacement for slow, legacy CI—no migration pain, just pure speed.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Founders Section */}
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-100">Our Leadership Team</h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-gray-800 p-6 rounded-lg border border-gray-700">
-              <div className="w-24 h-24 bg-gray-700 rounded-full mx-auto mb-4"></div>
-              <h3 className="text-xl font-semibold text-center mb-2 text-gray-100">John Doe</h3>
-              <p className="text-green-500 text-center mb-4">CEO & Co-founder</p>
-              <p className="text-gray-400 text-center">
-                Former DevOps lead at major tech companies with 15+ years of experience.
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-100">Our Founders</h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            <div className="bg-gray-800 p-8 rounded-xl border border-gray-700 flex flex-col items-center text-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-blue-500 rounded-full mb-6 flex items-center justify-center">
+                <Users className="h-10 w-10 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-gray-100">Ujjwal</h3>
+              <p className="text-green-400 mb-2">Head of Engineering & Product Strategy</p>
+              <p className="text-gray-400">
+                IIT-Roorkee alum, ex-EZAIX, and certified Google Cloud professional. Personally slashed Deutsche Bank's test times from 5h → 45m. Obsessed with developer speed and product excellence.
               </p>
             </div>
-            <div className="bg-gray-800 p-6 rounded-lg border border-gray-700">
-              <div className="w-24 h-24 bg-gray-700 rounded-full mx-auto mb-4"></div>
-              <h3 className="text-xl font-semibold text-center mb-2 text-gray-100">Jane Smith</h3>
-              <p className="text-green-500 text-center mb-4">CTO & Co-founder</p>
-              <p className="text-gray-400 text-center">
-                AI/ML expert with a passion for making technology accessible to everyone.
-              </p>
-            </div>
-            <div className="bg-gray-800 p-6 rounded-lg border border-gray-700">
-              <div className="w-24 h-24 bg-gray-700 rounded-full mx-auto mb-4"></div>
-              <h3 className="text-xl font-semibold text-center mb-2 text-gray-100">Mike Johnson</h3>
-              <p className="text-green-500 text-center mb-4">Head of Product</p>
-              <p className="text-gray-400 text-center">
-                Product leader with experience in building successful SaaS platforms.
+            <div className="bg-gray-800 p-8 rounded-xl border border-gray-700 flex flex-col items-center text-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full mb-6 flex items-center justify-center">
+                <Brain className="h-10 w-10 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-gray-100">Nitin</h3>
+              <p className="text-green-400 mb-2">CTO & Architecture</p>
+              <p className="text-gray-400">
+                Polyglot engineer with deep AI, infra, and development expertise (LangChain, LangGraph, FastAPI, Node, Python, Backend, Frontend). Ex-EZAIX. Committed to building the fastest, smartest CI/CD for modern teams.
               </p>
             </div>
           </div>
@@ -81,20 +77,20 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-100">Our Values</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="p-6 bg-gray-900 rounded-lg border border-gray-800">
-              <Users className="h-12 w-12 text-green-500 mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-gray-100">Customer First</h3>
-              <p className="text-gray-400">We put our customers at the center of everything we do.</p>
+            <div className="p-6 bg-gray-900 rounded-lg border border-gray-800 text-center">
+              <Zap className="h-12 w-12 text-green-500 mb-4 mx-auto" />
+              <h3 className="text-xl font-semibold mb-2 text-gray-100">Speed Obsessed</h3>
+              <p className="text-gray-400">We believe every developer deserves the world's fastest feedback loop.</p>
             </div>
-            <div className="p-6 bg-gray-900 rounded-lg border border-gray-800">
-              <Target className="h-12 w-12 text-green-500 mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-gray-100">Innovation</h3>
-              <p className="text-gray-400">We constantly push boundaries to deliver better solutions.</p>
+            <div className="p-6 bg-gray-900 rounded-lg border border-gray-800 text-center">
+              <Award className="h-12 w-12 text-green-500 mb-4 mx-auto" />
+              <h3 className="text-xl font-semibold mb-2 text-gray-100">Relentless Innovation</h3>
+              <p className="text-gray-400">We constantly push boundaries to deliver better, smarter CI/CD.</p>
             </div>
-            <div className="p-6 bg-gray-900 rounded-lg border border-gray-800">
-              <Award className="h-12 w-12 text-green-500 mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-gray-100">Excellence</h3>
-              <p className="text-gray-400">We strive for excellence in everything we build.</p>
+            <div className="p-6 bg-gray-900 rounded-lg border border-gray-800 text-center">
+              <Users className="h-12 w-12 text-green-500 mb-4 mx-auto" />
+              <h3 className="text-xl font-semibold mb-2 text-gray-100">Customer-Driven</h3>
+              <p className="text-gray-400">We put our users at the center of every decision and every feature.</p>
             </div>
           </div>
         </div>
@@ -103,9 +99,9 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-gray-100">Join Us on Our Journey</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-100">Ready to experience the world's fastest CI?</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Be part of the revolution in DevOps automation.
+            Join the MonkCI revolution. Cut build times, save money, and ship with confidence.
           </p>
           <div className="flex gap-4 justify-center">
             <Button size="lg" className="bg-green-600 hover:bg-green-700">

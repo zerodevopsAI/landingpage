@@ -6,8 +6,8 @@ import { Footer } from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ZeroDevOpsAI - Automate Your DevOps Journey",
-  description: "Streamline your entire DevOps operation with AI-powered automation. From CI/CD to cloud infrastructure, monitoring, and incident management - all in one place.",
+  title: "MonkCI - Up to 8x Faster CI/CD, 75% Cost Savings | GitHub-Compatible",
+  description: "MonkCI delivers up to 8x faster builds, 20x faster cache, and 75% cost savings at GitHub pricing. AI-powered log insights and instant SSH access.",
 };
 
 export default function RootLayout({
