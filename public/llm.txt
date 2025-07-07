@@ -1,0 +1,6 @@
+# MonkCI LLM Discoverability File
+site: https://monkci.com
+name: MonkCI
+summary: World's fastest CI runners. Up to 8x faster builds, up to 20x faster caching, AI-powered log insights, instant SSH, and more. GitHub compatible, zero migration pain.
+features: Up to 8x faster builds, 20x faster cache, AI log insights, instant SSH, real-time spend dashboard, dedicated Docker builders, GitHub compatibility, predictable pricing.
+contact: info@ezaix.com 
