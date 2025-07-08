@@ -3,10 +3,10 @@ version: '3.8'
 services:
   # Next.js Application
   app:
-    # build:
-    #   context: .
-    #   dockerfile: Dockerfile
-    image: leaffyearthdocker/zdo_landingpage
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: monkci/monkci_landingpage
     container_name: zerodevopsai-app
     restart: always
     environment:

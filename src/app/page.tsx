@@ -7,17 +7,13 @@ import {
   Shield, 
   Clock, 
   DollarSign, 
-  TrendingUp, 
-  Rocket,
   CheckCircle,
   AlertTriangle,
   Cpu,
   HardDrive,
   Terminal,
   BarChart3,
-  Users,
-  Globe,
-  Star
+  Users
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -35,7 +31,7 @@ export default function Home() {
             Same GitHub Minutes — 10× More Value
           </div>
           <h1 className="text-5xl md:text-7xl font-extrabold mb-4 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent leading-tight drop-shadow-lg">
-            World's Fastest CI runners
+            World&apos;s Fastest CI runners
           </h1>
           <div className="text-2xl md:text-3xl font-semibold mb-6 text-blue-300 tracking-tight">
             Up to <span className="text-green-400">8× faster builds</span>, up to <span className="text-blue-400">20× faster caching</span>
@@ -76,7 +72,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6 text-gray-100">The Pain Today</h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Legacy CI systems are buckling under the weight of AI-driven products. Here's what's hurting developers.
+              Legacy CI systems are buckling under the weight of AI-driven products. Here&apos;s what&apos;s hurting developers.
             </p>
           </div>
           
@@ -137,7 +133,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold text-gray-100">Wasted Developer Time</h3>
               </div>
               <p className="text-gray-400 leading-relaxed">
-                The "20% payroll tax" of waiting for builds to complete.
+                The &quot;20% payroll tax&quot; of waiting for builds to complete.
               </p>
             </div>
           </div>
@@ -237,9 +233,9 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="p-8 bg-gray-800 rounded-xl border border-gray-700">
               <div className="text-3xl mb-4">🚀</div>
-              <h3 className="text-xl font-semibold text-gray-100 mb-4">"Spaceship vs. Car Factory"</h3>
+              <h3 className="text-xl font-semibold text-gray-100 mb-4">&quot;Spaceship vs. Car Factory&quot;</h3>
               <p className="text-gray-400 leading-relaxed">
-                AI-driven products are orders of magnitude heavier than yesterday's web apps; legacy CI "car factories" are buckling. MonkCI is the purpose-built "spaceship factory."
+                AI-driven products are orders of magnitude heavier than yesterday&apos;s web apps; legacy CI &quot;car factories&quot; are buckling. MonkCI is the purpose-built &quot;spaceship factory&quot;.
               </p>
             </div>
             
@@ -267,7 +263,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="bg-gray-800 rounded-2xl border border-gray-700 shadow-2xl p-12 max-w-5xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-4 text-gray-100">Why We'll Win</h2>
+              <h2 className="text-4xl font-bold mb-4 text-gray-100">Why We&apos;ll Win</h2>
               <p className="text-xl text-gray-400 max-w-3xl mx-auto">
                 Proven founders, top talent, and deep commitment to the problem.
               </p>
@@ -280,7 +276,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-100 mb-4">Top Talent & Proven Founders</h3>
                 <p className="text-gray-400 leading-relaxed mb-2">
-                  IIT-Roorkee classmates turned co-leaders at EZAIX: Ujjwal (Head of Engineering & product strategy) + Nitin (CTO & architecture). Trust and execution speed already battle-tested. Our best engineers are already committed to join once we're funded, and we have friendly enterprise contacts for future sales leads.
+                  IIT-Roorkee classmates turned co-leaders at EZAIX: Ujjwal (Head of Engineering & product strategy) + Nitin (CTO & architecture). Trust and execution speed already battle-tested. Our best engineers are already committed to join once we&apos;re funded, and we have friendly enterprise contacts for future sales leads.
                 </p>
               </div>
               {/* Deep Fit & Commitment */}
@@ -290,7 +286,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-100 mb-4">Deep Fit & Commitment</h3>
                 <p className="text-gray-400 leading-relaxed mb-2">
-                  Ujjwal personally slashed Deutsche Bank's test times (5h → 45m) and is a certified Google Cloud professional. Nitin is a polyglot engineer with deep AI, infra and development expertise. We've quit our secure jobs to focus full-time on MonkCI, giving us the speed and drive that big companies can't match.
+                  Ujjwal personally slashed Deutsche Bank&apos;s test times (5h → 45m) and is a certified Google Cloud professional. Nitin is a polyglot engineer with deep AI, infra and development expertise. We&apos;ve quit our secure jobs to focus full-time on MonkCI, giving us the speed and drive that big companies can&apos;t match.
                 </p>
               </div>
             </div>

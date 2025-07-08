@@ -14,7 +14,7 @@ export default function AboutPage() {
             About MonkCI
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            MonkCI is on a mission to build the world's fastest CI runners. We help teams ship features up to 8× faster and cache up to 20× faster—at a fraction of the cost, with zero migration pain.
+            MonkCI is on a mission to build the world&apos;s fastest CI runners. We help teams ship features up to 8× faster and cache up to 20× faster—at a fraction of the cost, with zero migration pain.
           </p>
         </div>
       </section>
@@ -26,7 +26,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6 text-gray-100">Why MonkCI?</h2>
               <p className="text-gray-400 text-lg mb-8">
-                Legacy CI/CD tools are slow, expensive, and built for yesterday's web apps. MonkCI is purpose-built for today's AI-driven, high-velocity teams—delivering up to 8× faster builds, up to 20× faster caching, and 75% lower costs, all at GitHub pricing.
+                Legacy CI/CD tools are slow, expensive, and built for yesterday&apos;s web apps. MonkCI is purpose-built for today&apos;s AI-driven, high-velocity teams—delivering up to 8× faster builds, up to 20× faster caching, and 75% lower costs, all at GitHub pricing.
               </p>
               <p className="text-gray-400">
                 We believe every developer deserves world-class speed, instant feedback, and predictable budgets—without switching off innovation.
@@ -55,7 +55,7 @@ export default function AboutPage() {
               <h3 className="text-xl font-semibold mb-2 text-gray-100">Ujjwal</h3>
               <p className="text-green-400 mb-2">Head of Engineering & Product Strategy</p>
               <p className="text-gray-400">
-                IIT-Roorkee alum, ex-EZAIX, and certified Google Cloud professional. Personally slashed Deutsche Bank's test times from 5h → 45m. Obsessed with developer speed and product excellence.
+                IIT-Roorkee alum, ex-EZAIX, and certified Google Cloud professional. Personally slashed Deutsche Bank&apos;s test times from 5h → 45m. Obsessed with developer speed and product excellence.
               </p>
             </div>
             <div className="bg-gray-800 p-8 rounded-xl border border-gray-700 flex flex-col items-center text-center">
@@ -80,7 +80,7 @@ export default function AboutPage() {
             <div className="p-6 bg-gray-900 rounded-lg border border-gray-800 text-center">
               <Zap className="h-12 w-12 text-green-500 mb-4 mx-auto" />
               <h3 className="text-xl font-semibold mb-2 text-gray-100">Speed Obsessed</h3>
-              <p className="text-gray-400">We believe every developer deserves the world's fastest feedback loop.</p>
+              <p className="text-gray-400">We believe every developer deserves the world&apos;s fastest feedback loop.</p>
             </div>
             <div className="p-6 bg-gray-900 rounded-lg border border-gray-800 text-center">
               <Award className="h-12 w-12 text-green-500 mb-4 mx-auto" />
@@ -99,7 +99,7 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-gray-100">Ready to experience the world's fastest CI?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-100">Ready to experience the world&apos;s fastest CI?</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Join the MonkCI revolution. Cut build times, save money, and ship with confidence.
           </p>

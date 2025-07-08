@@ -13,7 +13,7 @@ export default function FeaturesPage() {
             MonkCI Features
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            The world's fastest CI runners, built for modern teams. Up to 8× faster builds, up to 20× faster caching, and so much more.
+            The world&apos;s fastest CI runners, built for modern teams. Up to 8× faster builds, up to 20× faster caching, and so much more.
           </p>
         </div>
       </section>
@@ -23,7 +23,7 @@ export default function FeaturesPage() {
             <div className="bg-gray-900 rounded-2xl border border-green-600/30 shadow-lg p-8 flex flex-col items-center text-center">
               <Zap className="h-12 w-12 text-green-400 mb-4" />
               <h3 className="text-xl font-semibold text-gray-100 mb-2">Up to 8× Faster Builds</h3>
-              <p className="text-gray-400">Ship features in minutes, not hours. MonkCI's optimized runners deliver up to 8× faster build times for all your projects.</p>
+              <p className="text-gray-400">Ship features in minutes, not hours. MonkCI&apos;s optimized runners deliver up to 8× faster build times for all your projects.</p>
             </div>
             <div className="bg-gray-900 rounded-2xl border border-blue-600/30 shadow-lg p-8 flex flex-col items-center text-center">
               <HardDrive className="h-12 w-12 text-blue-400 mb-4" />
@@ -62,7 +62,7 @@ export default function FeaturesPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6 text-gray-100">Ready to build at lightspeed?</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Start your free trial and experience the world's fastest CI/CD for yourself.
+            Start your free trial and experience the world&apos;s fastest CI/CD for yourself.
           </p>
           <Button size="lg" className="bg-green-600 hover:bg-green-700" asChild>
             <Link href="/contact">

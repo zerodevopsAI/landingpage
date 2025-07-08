@@ -1,6 +1,6 @@
 import { Navbar } from '@/components/Navbar';
 import { Button } from '@/components/ui/button';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, Send } from 'lucide-react';
 
 export default function ContactPage() {
   return (
