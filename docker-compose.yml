@@ -6,7 +6,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: monkci/monkci_landingpage
+    image: monkci/landingpage
     container_name: zerodevopsai-app
     restart: always
     environment:
