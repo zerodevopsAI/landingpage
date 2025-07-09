@@ -12,7 +12,7 @@ export function Navbar() {
           
           <div className="hidden md:flex items-center space-x-8">
             <Link 
-              href="/features" 
+              href="/#our-fix" 
               className="text-gray-300 hover:text-green-400 transition-colors cursor-pointer"
             >
               Features

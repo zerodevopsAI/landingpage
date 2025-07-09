@@ -31,18 +31,19 @@ export default function Home() {
             Same GitHub Minutes — 10× More Value
           </div>
           <h1 className="text-5xl md:text-7xl font-extrabold mb-4 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent leading-tight drop-shadow-lg">
-            World&apos;s Fastest CI runners
+            On a mission to create<br />
+            the world&apos;s fastest CI
           </h1>
           <div className="text-2xl md:text-3xl font-semibold mb-6 text-blue-300 tracking-tight">
             Up to <span className="text-green-400">8× faster builds</span>, up to <span className="text-blue-400">20× faster caching</span>
           </div>
-          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-300 font-medium mb-8 max-w-2xl mx-auto leading-relaxed">
             Cut CI costs by up to 75% — ship features faster, keep budgets predictable, and reclaim developer time. All at GitHub pricing.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button size="lg" className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-4 text-lg font-semibold shadow-lg" asChild>
-              <Link href="/contact">
-                Schedule Demo
+              <Link href="/join-waitlist">
+                Join Waitlist
               </Link>
             </Button>
           </div>
@@ -141,7 +142,7 @@ export default function Home() {
       </section>
 
       {/* Our Fix Section */}
-      <section className="py-20">
+      <section id="our-fix" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6 text-gray-100">Our Fix</h2>
@@ -157,7 +158,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold text-gray-100">Up to 8× Faster CI</h3>
               </div>
               <p className="text-gray-400 leading-relaxed mb-4">
-                20 min → 5 min builds with faster compute at GitHub-standard pricing.
+                40 min → 5 min builds with faster compute at GitHub-standard pricing.
               </p>
               <div className="text-green-400 font-semibold">≈75% cost savings per build</div>
             </div>
@@ -243,7 +244,7 @@ export default function Home() {
               <div className="text-3xl mb-4">💰</div>
               <h3 className="text-xl font-semibold text-gray-100 mb-4">Cost Discipline is Back</h3>
               <p className="text-gray-400 leading-relaxed">
-                Boards now demand efficiency. MonkCI cuts a 20-minute build to 5 minutes, delivering ~75% cost savings without switching off innovation.
+                Boards now demand efficiency. MonkCI cuts a 40-minute build to 5 minutes, delivering ~75% cost savings without switching off innovation.
               </p>
             </div>
             
@@ -305,8 +306,8 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button size="lg" className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-4 text-lg font-semibold" asChild>
-              <Link href="/contact">
-                Schedule Demo
+              <Link href="/join-waitlist">
+                Join the waitlist
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>

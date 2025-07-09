@@ -67,10 +67,10 @@ export function Footer() {
               <p className="text-sm text-gray-400">
                 <Mail className="h-4 w-4 inline mr-2" />
                 <a 
-                  href="mailto:info@ezaix.com" 
+                  href="mailto:info@monkci.com" 
                   className="text-green-400 hover:underline cursor-pointer"
                 >
-                  info@ezaix.com
+                  info@monkci.com
                 </a>
               </p>
             </div>

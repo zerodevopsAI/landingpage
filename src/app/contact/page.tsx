@@ -1,14 +1,47 @@
+"use client";
 import { Navbar } from '@/components/Navbar';
 import { Button } from '@/components/ui/button';
 import { Mail, Phone, Send } from 'lucide-react';
+import React, { useState } from 'react';
 
 export default function ContactPage() {
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState('');
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setLoading(true);
+    setError('');
+    setSuccess(false);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (res.ok) {
+        setSuccess(true);
+        form.reset();
+      } else {
+        const json = await res.json();
+        setError(json.error || 'Failed to submit.');
+      }
+    } catch {
+      setError('Failed to submit.');
+    } finally {
+      setLoading(false);
+    }
+  }
+
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
-      
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-gray-900 to-background">
+      <section className="pt-32 pb-5 px-4 bg-gradient-to-b from-gray-900 to-background">
         <div className="container mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-green-500 to-green-700 bg-clip-text text-transparent">
             Get in Touch
@@ -18,7 +51,6 @@ export default function ContactPage() {
           </p>
         </div>
       </section>
-
       {/* Contact Form Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -45,11 +77,10 @@ export default function ContactPage() {
                 </div>
               </div>
             </div>
-
             {/* Contact Form */}
             <div className="bg-gray-900 p-8 rounded-lg border border-gray-800">
               <h2 className="text-2xl font-bold mb-6 text-gray-100">Send us a Message</h2>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                     Name
@@ -57,11 +88,12 @@ export default function ContactPage() {
                   <input
                     type="text"
                     id="name"
+                    name="name"
+                    required
                     className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-gray-100 focus:outline-none focus:ring-2 focus:ring-green-500"
                     placeholder="Your name"
                   />
                 </div>
-                
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                     Email
@@ -69,11 +101,12 @@ export default function ContactPage() {
                   <input
                     type="email"
                     id="email"
+                    name="email"
+                    required
                     className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-gray-100 focus:outline-none focus:ring-2 focus:ring-green-500"
                     placeholder="your.email@example.com"
                   />
                 </div>
-                
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
                     Subject
@@ -81,25 +114,29 @@ export default function ContactPage() {
                   <input
                     type="text"
                     id="subject"
+                    name="subject"
+                    required
                     className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-gray-100 focus:outline-none focus:ring-2 focus:ring-green-500"
                     placeholder="What's this about?"
                   />
                 </div>
-                
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                     Message
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     rows={4}
+                    required
                     className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-gray-100 focus:outline-none focus:ring-2 focus:ring-green-500"
                     placeholder="Your message..."
                   ></textarea>
                 </div>
-                
-                <Button className="w-full bg-green-600 hover:bg-green-700">
-                  Send Message
+                {success && <div className="text-green-400 text-center font-semibold">Thank you! We&apos;ve received your message.</div>}
+                {error && <div className="text-red-400 text-center font-semibold">{error}</div>}
+                <Button type="submit" className="w-full bg-green-600 hover:bg-green-700" disabled={loading}>
+                  {loading ? 'Sending...' : 'Send Message'}
                   <Send className="ml-2 h-4 w-4" />
                 </Button>
               </form>
@@ -107,7 +144,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
       {/* FAQ Section */}
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">

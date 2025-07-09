@@ -54,7 +54,7 @@ export default function PrivacyPolicyPage() {
             <section>
               <h2 className="text-xl font-semibold mb-2 text-gray-100">Contact Us</h2>
               <p>
-                If you have questions about this Privacy Policy or your data, please contact us at <a href="mailto:info@ezaix.com" className="text-green-400 underline">info@ezaix.com</a>.
+                If you have questions about this Privacy Policy or your data, please contact us at <a href="mailto:info@monkci.com" className="text-green-400 underline">info@monkci.com</a>.
               </p>
             </section>
             <div className="text-sm text-gray-500 pt-8">Last updated: {new Date().getFullYear()}</div>
